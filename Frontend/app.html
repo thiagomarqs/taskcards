@@ -1,0 +1,156 @@
+<html lang="pt">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="./style.css">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <!-- TODA A PÁGINA FICA DENTRO DESTA DIV-->
+        <div class="faculdadetela border-class-1">
+          <!-- CÓDIGO DO MENU LATERAL-->
+          <div class="menu_lateral">
+              <div class="todas-as-tarefas font-class-1 border-class-1">Todas as tarefas</div>
+              <div class="categorias font-class-1 border-class-1">Categorias:</div>     
+              <ul class="listaCategorias font-class-1 border-class-1">
+              </ul>
+
+              <!-- LOGO -->
+              <img
+                class="image-2"
+                src="./img/logo.jpg"
+              />
+              <div class="task-cards font-class-4 border-class-1">TaskCards</div>
+              
+              <!-- LISTA DE OPÇÕES DE ADICIONAR-->
+              <ul class="listaOpcoesAdd font-class-1">
+                  <li>Tarefa</li>
+                  <li>Categoria</li>
+              </ul>
+              <!-- BOTAO ADICIONAR -->
+              <div class="botaoadicionar">
+                <img
+                  class="adicionar"
+                  src="https://anima-uploads.s3.amazonaws.com/projects/5fb2c839abf5d111273c8ce9/releases/5fb2c979abf5d111273c8cfc/img/adicionar@2x.png"
+                />
+              </div>
+          </div>
+            
+            
+            <!-- TITULO DA SEÇÃO -->
+            <h1 class="tituloSecao font-class-2 border-class-1">Todas as tarefas</h1>  
+            <div class="opcoesCtg">
+                <h2 class="opcoesCtgEdit">Editar</h2>
+                <h2 class="opcoesCtgRemove">Remover</h2>
+            </div>
+            
+            <!-- CONTAINER ONDE FICARÃO TODOS OS CARDS-->
+            <div class="containerCards">             
+
+            </div> 
+            <!-- JANELAS -->
+            <!-- adicionar tarefa -->
+            <div class="addTaskWindow">
+                 <div class="v59_172">
+                    <input type="text" placeholder="Título" class="tituloCampo">
+                 </div>
+                 <div class="v59_169">
+                    <input type="text" placeholder="Escreva sua descrição aqui." class="descCampo">
+                 </div>
+                 <div class="v59_175">
+                    <div class="v59_176"></div>
+                    <span class="v59_177">Salvar</span>
+                 </div>
+                 <div class="v59_181">
+                    <div class="v59_182">
+                       <input class="diaCampo" maxlength="2" type="number" value="1" min="01" max="31" placeholder="dia"  oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength); if(parseInt(this.value) > parseInt(this.max)) this.value = this.max; if(parseInt(this.value) < parseInt(this.min)) this.value = this.min;">
+                    </div>
+                    <div class="v59_185">
+                       <input class="mesCampo" maxlength="2" type="number" value="1" min="01" max="12" placeholder="mes"  oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength); if(parseInt(this.value) > parseInt(this.max)) this.value = this.max; if(parseInt(this.value) < parseInt(this.min)) this.value = this.min;">
+                    </div>
+                    <div class="v59_188">
+                       <input class="anoCampo" maxlength="4" type="number" value="2020" min="2020" max="2100" placeholder="ano"  oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength); if(parseInt(this.value) > parseInt(this.max)) this.value = this.max; if(parseInt(this.value) < parseInt(this.min)) this.value = this.min;">
+                    </div>
+                 </div>
+                 <div class="v59_191">
+                    <input type="text" class="categoriaCampo" maxlength="30">
+                 </div>
+                 <div class="v59_194">
+                    <div class="v59_195"></div>
+                    <div class="name"></div>
+                 </div>
+                 <span class="v59_201">Adicionar Tarefa</span>
+                 <div class="name"></div>
+            </div>
+            
+            <!-- editar tarefa -->
+            <div class="editTaskWindow">
+             <div class="v59_209">
+                 <!-- titulo -->
+                <input type="text" placeholder="Título" class="v59_210">
+             </div>
+             <div class="v59_206">
+                <input type="text" placeholder="Escreva sua descrição aqui." class="v59_207">
+             </div>
+             <div class="v59_212">
+                <div class="v59_213"></div>
+                <span class="v59_214">Salvar</span>
+             </div>
+             <div class="v59_215">
+                <div class="v59_216">
+                   <input class="v59_217" maxlength="2" type="number" value="1" min="01" max="31" placeholder="dia"  oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength); if(parseInt(this.value) > parseInt(this.max)) this.value = this.max; if(parseInt(this.value) < parseInt(this.min)) this.value = this.min;">
+                </div>
+                <div class="v59_219">
+                   <input type="number" class="v59_220" maxlength="2" type="number" value="1" min="01" max="12" placeholder="mes"  oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength); if(parseInt(this.value) > parseInt(this.max)) this.value = this.max; if(parseInt(this.value) < parseInt(this.min)) this.value = this.min;">
+                   
+                </div>
+                <div class="v59_222">
+                   <input type="number" class="v59_223" maxlength="4" type="number" value="2020" min="2020" max="2100" placeholder="ano"  oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength); if(parseInt(this.value) > parseInt(this.max)) this.value = this.max; if(parseInt(this.value) < parseInt(this.min)) this.value = this.min;">
+                   
+                </div>
+             </div>
+             <div class="v59_225">
+                <input type="text" placeholder="Categoria" class="v59_226">
+             </div>
+             <div class="v59_228">
+                <div class="v59_229"></div>
+                <div class="name"></div>
+             </div>
+             <span class="v59_231">Editar Tarefa</span>
+             <div class="name"></div>
+            </div>
+            
+            <!-- nova categoria-->
+            <div class="addCategory">
+             <div class="v59_248">
+                <div class="v59_249"></div>
+                <span class="v59_250">Salvar</span>
+             </div>
+             <span class="v59_260">Nova Categoria</span>
+             <div class="name"></div>
+             <div class="v59_241">
+                <div class="v59_242">
+                   <input class="v59_243" placeholder="Nome da categoria" maxlength="30">
+                </div>
+             </div>
+            </div>
+            
+            <!-- editar categoria-->
+            <div class="editCategory">
+             <div class="v59_248">
+                <div class="v59_249"></div>
+                <span class="v59_250">Salvar</span>
+             </div>
+             <span class="v59_260">Editar Categoria</span>
+             <div class="name"></div>
+             <div class="v59_241">
+                <div class="v59_242">
+                   <input class="v59_243" placeholder="Nome da categoria" maxlength="30">
+                </div>
+             </div>
+            </div>
+                        
+        </div>
+    </body>
+    <script src="app.js"></script>
+</html>
